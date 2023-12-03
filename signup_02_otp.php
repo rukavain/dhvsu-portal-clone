@@ -26,7 +26,7 @@ if (!isset($_SESSION['gatepass']) || $_SESSION['gatepass'] !== 'signup_02') {
 
 </head>
 
-<body>
+<body class="bg-image" style="--bs-bg-opacity: .5; background-image: url('./images/login-background.jpg'); height:auto; width:auto;">
     <?php include('school_header.php'); ?>
 
     <!-- Log In Form -->

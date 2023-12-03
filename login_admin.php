@@ -25,16 +25,13 @@ if (isset($_COOKIE['cookieAdminEmail']) && isset($_COOKIE['cookieAdminPassword']
 
 </head>
 
-<body>
+<body class="bg-image" style="--bs-bg-opacity: .5; background-image: url('./images/login-background.jpg'); height:auto; width:auto;">
     <?php include('school_header.php'); ?>
 
     <!-- Log In Form -->
-    <div class="container col-md-10 mx-auto col-lg-5  float-end me-5 pe-5 login_form  pt-5">
-        <form action="login_01a_process.php" method="post" class="p-4 p-md-5 border rounded-3 bg-body-tertiary h-100 ">
-
-
+    <div class="container col-md-10 mx-auto col-lg-5  float-end me-5 pe-5 login_form pt-5">
+        <form action="login_01a_process.php" method="post" class="p-4 p-md-5 border rounded-3 bg-body-tertiary h-100 border border-dark border-2">
             <h3 class="text-center mb-2">Admin Login</h3>
-
             <div class="form-floating mt-4 mb-3">
                 <input type="email" class="form-control" id="floatingInput" placeholder="username" name="usermail" required value="<?= $cookieAdminEmail ?>">
                 <label for="floatingInput">Email</label>

@@ -38,7 +38,7 @@ $isAdmin = ($_SESSION['user_role'] == 'Admin') ? true : false;
         body {
             height: 100%;
             width: 100%;
-            font-family: Apple Chancery, cursive;
+            font-family: Poppins;
         }
 
         .btn-info.text-light:hover,
@@ -62,19 +62,21 @@ $isAdmin = ($_SESSION['user_role'] == 'Admin') ? true : false;
 
 <body class="bg-light">
     <div class="wrapper d-flex align-items-stretch">
-        <nav id="sidebar">
+        <nav class="bg-danger" id="sidebar">
             <div class="custom-menu">
-                <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                <button type="button" id="sidebarCollapse" class="btn btn-primary bg-dark">
                     <i class="fa fa-bars"></i>
                     <span class="sr-only">Toggle Menu</span>
                 </button>
             </div>
             <div class="p-4 pt-5 h-100 d-flex flex-column justify-content-between">
                 <div>
-                    <h1><a href="dashboard_01.php" class="logo">dhvsu logo dito</a></h1>
+                    <h1><a href="dashboard_01.php" class="logo">
+                        <img class="img-fluid" src="./images/logo.png" alt="">
+                    </a></h1>
                     <ul class="list-unstyled components mb-5">
 
-                        <li>
+                        <li class="">
                             <a href="dashboard_04_announcement.php">Announcement</a>
                         </li>
                         <?php if ($isAdmin) {

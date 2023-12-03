@@ -15,7 +15,7 @@
 
 </head>
 
-<body>
+<body class="bg-image" style="--bs-bg-opacity: .5; background-image: url('./images/login-background.jpg'); height:auto; width:auto;">
     <?php include('school_header.php'); ?>
 
     <!-- Log In Form -->
