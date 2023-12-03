@@ -24,24 +24,24 @@
         <span class="contact1-form-title"> Update / Edit News or Events </span>
 
         <div class="wrap-input1 validate-input">
-            <input class="input1" type="text" name="title" placeholder="" required value="<?php echo htmlspecialchars($title); ?>" />
+            <input class="input1" type="text" name="title" placeholder="" required value="<?php echo htmlspecialchars_decode($title); ?>" />
             <span class="shadow-input1"></span>
         </div>
 
         <div class="wrap-input1 validate-input">
-            <textarea class="input1" name="description" placeholder="Description" required><?php echo htmlspecialchars($description); ?></textarea>
+            <textarea class="input1" name="description" placeholder="Description" required><?php echo htmlspecialchars_decode($description); ?></textarea>
             <span class="shadow-input1"></span>
         </div>
 
         <div class="wrap-input1 validate-input">
             <label for="">Start Date</label>
-            <input class="input1" type="datetime-local" name="dateStart" placeholder="Start Date" value="<?php echo htmlspecialchars($start_date); ?>" required />
+            <input class="input1" type="datetime-local" name="dateStart" placeholder="Start Date" value="<?php echo htmlspecialchars_decode($start_date); ?>" required />
             <span class="shadow-input1"></span>
         </div>
 
         <div class="wrap-input1 validate-input">
             <label for="">End Date</label>
-            <input class="input1" type="datetime-local" name="dateEnd" placeholder="End Date" value="<?php echo htmlspecialchars($end_date); ?>" required>
+            <input class="input1" type="datetime-local" name="dateEnd" placeholder="End Date" value="<?php echo htmlspecialchars_decode($end_date); ?>" required>
             <span class="shadow-input1"></span>
         </div>
         <div class="container-contact1-form-btn gap-1">

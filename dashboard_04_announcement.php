@@ -72,8 +72,8 @@ $isAdmin = ($_SESSION['user_role'] == 'Admin') ? true : false;
             <div class="p-4 pt-5 h-100 d-flex flex-column justify-content-between">
                 <div>
                     <h1><a href="dashboard_01.php" class="logo">
-                        <img class="img-fluid" src="./images/logo.png" alt="">
-                    </a></h1>
+                            <img class="img-fluid" src="./images/logo.png" alt="">
+                        </a></h1>
                     <ul class="list-unstyled components mb-5">
 
                         <li class="">
@@ -82,11 +82,12 @@ $isAdmin = ($_SESSION['user_role'] == 'Admin') ? true : false;
                         <?php if ($isAdmin) {
                             echo <<< HTML
                                             <li>
-                                                <a href="signup_admin_01.php">Register New Admin</a>
-                                            </li>
-                                            <li>
                                                 <a href="dashboard_05_create_announcement.php">Create Announcements</a>
                                             </li>
+                                            <li>
+                                                <a href="signup_admin_01.php">Register New Admin</a>
+                                            </li>
+                                           
                                     HTML;
                         } ?>
 

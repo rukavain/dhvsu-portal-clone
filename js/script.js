@@ -18,6 +18,12 @@ $(function () {
     m = date.getMonth(),
     y = date.getFullYear();
 
+  function decodeHtmlEntities(text) {
+    var txt = document.createElement("textarea");
+    txt.innerHTML = text;
+    return txt.value;
+  }
+
   calendar = new Calendar(document.getElementById("calendar"), {
     headerToolbar: {
       left: "prev,next today",
@@ -32,10 +38,17 @@ $(function () {
       var _details = $("#event-details-modal");
       var id = info.event.id;
       if (!!scheds[id]) {
-        _details.find("#title").text(scheds[id].title);
-        _details.find("#description").text(scheds[id].description);
-        _details.find("#start").text(scheds[id].sdate);
-        _details.find("#end").text(scheds[id].edate);
+        // _details.find("#title").text(scheds[id].title);
+        // _details.find("#description").text(scheds[id].description);
+        // _details.find("#start").text(scheds[id].sdate);
+        // _details.find("#end").text(scheds[id].edate);
+        _details.find("#title").text(decodeHtmlEntities(scheds[id].title));
+        _details
+          .find("#description")
+          .text(decodeHtmlEntities(scheds[id].description));
+        _details.find("#start").text(decodeHtmlEntities(scheds[id].sdate));
+        _details.find("#end").text(decodeHtmlEntities(scheds[id].edate));
+
         _details
           .find("#edit,#delete,#register, #viewParticipants")
           .attr("data-id", id);
@@ -69,8 +82,10 @@ $(function () {
         String(scheds[id].start_datetime).replace(" ", "\\t")
       );
       _form.find('[name="id"]').val(id);
-      _form.find('[name="title"]').val(scheds[id].title);
-      _form.find('[name="description"]').val(scheds[id].description);
+      _form.find('[name="title"]').val(decodeHtmlEntities(scheds[id].title));
+      _form
+        .find('[name="description"]')
+        .val(decodeHtmlEntities(scheds[id].description));
       _form
         .find('[name="start_datetime"]')
         .val(String(scheds[id].start_datetime).replace(" ", "T"));

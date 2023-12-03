@@ -71,18 +71,19 @@ if (!(isset($_SESSION['user_role']))) {
             <div class="p-4 pt-5 d-flex flex-column" style="height: 100vh;">
                 <div>
                     <h1><a href="dashboard_01.php" class="logo">
-                        <img class="img-fluid" src="./images/logo.png" alt="">
-                    </a></h1>
+                            <img class="img-fluid" src="./images/logo.png" alt="">
+                        </a></h1>
                     <ul class="list-unstyled components mb-5">
                         <li>
                             <a href="dashboard_04_announcement.php">Announcement</a>
                         </li>
                         <li>
-                            <a href="signup_admin_01.php">Register New Admin</a>
-                        </li>
-                        <li>
                             <a href="dashboard_05_create_announcement.php">Create Announcements</a>
                         </li>
+                        <li>
+                            <a href="signup_admin_01.php">Register New Admin</a>
+                        </li>
+
                         <li>
                             <a href="dashboard_01.php">Calendar Event</a>
                         </li>
