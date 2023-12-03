@@ -171,9 +171,6 @@ if (isset($_GET['dataId'])) {
                                             </li>
                                     HTML;
                         } ?>
-
-
-
                         <li>
                             <a href="dashboard_01.php">Calendar Event</a>
                         </li>

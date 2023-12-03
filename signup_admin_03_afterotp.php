@@ -31,11 +31,9 @@ if (!isset($_SESSION['gatepass']) || $_SESSION['gatepass'] !== 'signup_admin_03'
 
 <body>
     <?php include('school_header.php'); ?>
-
     <!-- Log In Form -->
     <div class="container col-md-10 mx-auto col-lg-5  pt-5">
         <form action="signup_admin_03a_process.php" method="post" onsubmit="return validatePassword()" class="p-4 p-md-5 border rounded-3 bg-body-tertiary h-100 ">
-
 
             <h3 class="text-center mb-2">Sign Up</h3>
 
