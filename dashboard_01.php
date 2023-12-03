@@ -1,5 +1,6 @@
 <?php require_once('dashboard_00_db-connect.php') ?>
 <?php
+//noice noice
 session_start();
 
 if (!(isset($_SESSION['user_role']))) {
@@ -41,7 +42,7 @@ $isAdmin = ($_SESSION['user_role'] == 'Admin') ? true : false;
         body {
             height: 100%;
             width: 100%;
-            font-family:Poppins;
+            font-family: Poppins;
         }
 
         .btn-info.text-light:hover,
@@ -75,8 +76,8 @@ $isAdmin = ($_SESSION['user_role'] == 'Admin') ? true : false;
             <div class="p-4 pt-5 d-flex flex-column justify-content-between">
                 <div>
                     <h1><a href="dashboard_01.php" class="logo">
-                        <img class="img-fluid" src="./images/logo.png" alt="">
-                    </a></h1>
+                            <img class="img-fluid" src="./images/logo.png" alt="">
+                        </a></h1>
                     <ul class="list-unstyled components mb-5">
                         <li>
                             <a href="dashboard_04_announcement.php">Announcement</a>
