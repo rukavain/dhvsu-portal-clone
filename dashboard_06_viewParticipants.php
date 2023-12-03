@@ -146,7 +146,7 @@ if (isset($_GET['dataId'])) {
     <div class="wrapper d-flex align-items-stretch">
         <nav id="sidebar" class="bg-danger">
             <div class="custom-menu">
-                <button type="button" id="sidebarCollapse" class="btn btn-dark">
+                <button type="button" id="sidebarCollapse" class="btn btn-primary">
                     <i class="fa fa-bars"></i>
                     <span class="sr-only">Toggle Menu</span>
                 </button>
@@ -171,6 +171,9 @@ if (isset($_GET['dataId'])) {
                                             </li>
                                     HTML;
                         } ?>
+
+
+
                         <li>
                             <a href="dashboard_01.php">Calendar Event</a>
                         </li>
