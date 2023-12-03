@@ -24,7 +24,7 @@
         <span class="contact1-form-title"> Update / Edit News or Events </span>
 
         <div class="wrap-input1 validate-input">
-            <input class="input1" type="text" name="title" placeholder="Title" required value="<?php echo htmlspecialchars($title); ?>" />
+            <input class="input1" type="text" name="title" placeholder="" required value="<?php echo htmlspecialchars($title); ?>" />
             <span class="shadow-input1"></span>
         </div>
 
@@ -44,17 +44,14 @@
             <input class="input1" type="datetime-local" name="dateEnd" placeholder="End Date" value="<?php echo htmlspecialchars($end_date); ?>" required>
             <span class="shadow-input1"></span>
         </div>
-
-
-
-        <div class="container-contact1-form-btn">
-            <button class="contact1-form-btn" type="submit">
+        <div class="container-contact1-form-btn gap-1">
+            <button class="contact1-form-btn bg-dark" type="submit">
                 <span>
                     Publish
                     <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
                 </span>
             </button>
-            <button type="reset" class="contact1-form-btn">
+            <button type="reset" class="contact1-form-btn bg-dark">
                 <span>
                     Clear
                 </span>

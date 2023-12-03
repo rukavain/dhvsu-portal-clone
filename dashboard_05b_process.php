@@ -1,8 +1,8 @@
 <?php
 include('database.php');
-if (!(isset($_SESSION['user_role']))) {
-    header("Location: login_student.php");
-}
+// if (!(isset($_SESSION['user_role']))) {
+//     header("Location: login_student.php");
+// }
 
 try {
 

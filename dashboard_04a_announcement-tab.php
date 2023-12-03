@@ -40,7 +40,7 @@
                                         <tr>
                                             <th scope="row"> <?php echo $i; ?> </th>
                                             <td> <?php echo htmlspecialchars($row['title']) ?> </td>
-                                            <td style="max-width: 300px;"> <?php echo htmlspecialchars($row['description']) ?> </td>
+                                            <td style="max-width: 500px; min-width: 300px;"> <?php echo htmlspecialchars($row['description']) ?> </td>
                                             <td><?php echo $row['start_date'] . ' - ' . $row['end_date']; ?></td>
 
                                             <?php if ($isAdmin) { ?>

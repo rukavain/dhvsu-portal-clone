@@ -41,7 +41,7 @@ $isAdmin = ($_SESSION['user_role'] == 'Admin') ? true : false;
         body {
             height: 100%;
             width: 100%;
-            font-family: Apple Chancery, cursive;
+            font-family:Poppins;
         }
 
         .btn-info.text-light:hover,
@@ -67,7 +67,7 @@ $isAdmin = ($_SESSION['user_role'] == 'Admin') ? true : false;
     <div class="wrapper d-flex align-items-stretch">
         <nav id="sidebar" class="bg-danger">
             <div class="custom-menu">
-                <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                <button type="button" id="sidebarCollapse" class="btn btn-primary bg-dark">
                     <i class="fa fa-bars"></i>
                     <span class="sr-only bg-danger">Toggle Menu</span>
                 </button>
@@ -96,7 +96,7 @@ $isAdmin = ($_SESSION['user_role'] == 'Admin') ? true : false;
                             <!-- Button trigger modal -->
                             <?php if ($isAdmin) {
                                 echo <<<HTML
-                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                                    <button type="button" class="btn btn-primary my-4" data-toggle="modal" data-target="#exampleModalCenter">
                                          Add New Event
                                     </button>
 

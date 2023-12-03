@@ -1,8 +1,8 @@
 <?php require_once('dashboard_00_db-connect.php') ?>
 <?php
-if (!(isset($_SESSION['user_role']))) {
-    header("Location: login_student.php");
-}
+// if (!(isset($_SESSION['user_role']))) {
+//     header("Location: login_student.php");
+// }
 
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
@@ -99,15 +99,17 @@ if (isset($_GET['id'])) {
 
 <body class="bg-light vh-100 h-100">
     <div class="wrapper d-flex align-items-stretch vh-100 h-100">
-        <nav id="sidebar">
+        <nav class="bg-danger" id="sidebar">
             <div class="custom-menu">
-                <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                <button type="button" id="sidebarCollapse" class="btn btn-dark">
                     <i class="fa fa-bars"></i>
                     <span class="sr-only">Toggle Menu</span>
                 </button>
             </div>
             <div class="p-4 pt-5">
-                <h1><a href="index.html" class="logo">dhvsu logo dito</a></h1>
+                <h1><a href="index.html" class="logo">
+                    <img class="img-fluid" src="./images/logo.png" alt="">
+                </a></h1>
                 <ul class="list-unstyled components mb-5">
                     <li>
                         <a href="dashboard_04_announcement.php">Announcement</a>
@@ -118,8 +120,6 @@ if (isset($_GET['id'])) {
                     <li>
                         <a href="dashboard_01.php">Calendar Event</a>
                     </li>
-
-
                 </ul>
 
                 <div class="mb-5"></div>

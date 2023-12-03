@@ -61,16 +61,18 @@ if (!(isset($_SESSION['user_role']))) {
 
 <body class="bg-light vh-100 h-100">
     <div class="wrapper d-flex align-items-stretch vh-100 h-100">
-        <nav id="sidebar">
+        <nav id="sidebar" class="bg-danger">
             <div class="custom-menu">
-                <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                <button type="button" id="sidebarCollapse" class="btn btn-dark">
                     <i class="fa fa-bars"></i>
                     <span class="sr-only">Toggle Menu</span>
                 </button>
             </div>
             <div class="p-4 pt-5 d-flex flex-column" style="height: 100vh;">
                 <div>
-                    <h1><a href="dashboard_01.php" class="logo">dhvsu logo dito</a></h1>
+                    <h1><a href="dashboard_01.php" class="logo">
+                        <img class="img-fluid" src="./images/logo.png" alt="">
+                    </a></h1>
                     <ul class="list-unstyled components mb-5">
                         <li>
                             <a href="dashboard_04_announcement.php">Announcement</a>

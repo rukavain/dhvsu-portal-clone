@@ -19,6 +19,7 @@ if (isset($_COOKIE['cookieAdminEmail']) && isset($_COOKIE['cookieAdminPassword']
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/b9d712cc5d.js" crossorigin="anonymous"></script>
     <!-- CDN Link Bootstrap CSS -->
+    <link rel="icon" href="./images/logo.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <!-- CSS -->
     <link rel="stylesheet" href="css/login.css" />
@@ -27,7 +28,6 @@ if (isset($_COOKIE['cookieAdminEmail']) && isset($_COOKIE['cookieAdminPassword']
 
 <body class="bg-image" style="--bs-bg-opacity: .5; background-image: url('./images/login-background.jpg'); height:auto; width:auto;">
     <?php include('school_header.php'); ?>
-
     <!-- Log In Form -->
     <div class="container col-md-10 mx-auto col-lg-5  float-end me-5 pe-5 login_form pt-5">
         <form action="login_01a_process.php" method="post" class="p-4 p-md-5 border rounded-3 bg-body-tertiary h-100 border border-dark border-2">

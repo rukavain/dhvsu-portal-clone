@@ -33,13 +33,13 @@ if (isset($_COOKIE['cookieStudentEmail']) && isset($_COOKIE['cookieStudentPasswo
     <!-- Log In Form -->
     <div class="container col-md-10 mx-auto col-lg-5  float-end me-5 pe-5 login_form pt-5">
         <form action="login_01a_process.php" method="post" class="p-4 p-md-5 border rounded-3 bg-body-tertiary h-100 border border-danger border-2">
-
             <h3 class="text-center mb-2">Student Login</h3>
 
             <div class="form-floating mt-4 mb-3">
                 <input type="email" class="form-control" id="floatingInput" placeholder="username" name="usermail" required value="<?= $cookieStudentEmail ?>">
                 <label for="floatingInput">Email</label>
             </div>
+            
             <div class="form-floating mb-3">
                 <input type="password" class="form-control" id="floatingPassword" name="password" placeholder="Password" required value="<?= $cookieStudentPassword ?>">
                 <label for="floatingPassword">Password</label>
