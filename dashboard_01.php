@@ -129,6 +129,20 @@ $isAdmin = ($_SESSION['user_role'] == 'Admin') ? true : false;
 </body>
 <script>
     var scheds = $.parseJSON('<?= json_encode($sched_res) ?>')
+
+    // Function to decode HTML entities
+    function decodeHTMLEntities(str) {
+        var txt = document.createElement('textarea');
+        txt.innerHTML = str;
+        return txt.value;
+    }
+
+    // Iterate through each key in scheds object
+    Object.keys(scheds).forEach(function(key) {
+        // Decode HTML entities for title and description in each object
+        scheds[key].title = decodeHTMLEntities(scheds[key].title);
+        scheds[key].description = decodeHTMLEntities(scheds[key].description);
+    });
 </script>
 <script src="./js/script.js"></script>
 <script src="sidebar-dashboard/js/jquery.min.js"></script>
